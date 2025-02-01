@@ -1,10 +1,9 @@
 import Image from "next/image";
-import SideBar from "./components/Sidebar";
-import PieChart from "./components/page1/PieChart";
-import LineChart from "./components/page1/LineChart";
-import HorizontalBarChart from "./components/page1/HorizontalBarChart";
-import BarChart from "./components/page1/BarChart";
-import BoxPlot from "./components/page1/BoxPlot";
+import SideBar from "../../app/components/Sidebar";
+import Histogram from "../components/page2/Histogram";
+import HorizontalBarChart from "../components/page1/HorizontalBarChart";
+import BarchartPopulaire from "../components/page2/BarchartPopulaire";
+import ScatterPlot from "../components/page2/ScatterPlot";
 // import BarChartGross from "./components/page1/BarChartGross";
 
 export default function Home() {
@@ -28,28 +27,25 @@ export default function Home() {
         <div style={{ flex: "1 1 200px", backgroundColor: 'white', padding: '10px',
           borderRadius: '10px',boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
          }}> {/* Flex grow, shrink, and basis to control layout */}
-          <PieChart />
+          <Histogram />
         </div>
-        <div style={{ flex: "1 1 300px", backgroundColor: 'white', padding: '10px',
+        <div style={{ flex: "1 1 200px", backgroundColor: 'white', padding: '10px',
           borderRadius: '10px',boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
-         }}>
-          <LineChart />
-        </div>
-        <div style={{ flex: "1 1 300px", backgroundColor: 'white', padding: '10px',
-          borderRadius: '10px',boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
-         }}>
+         }}> {/* Flex grow, shrink, and basis to control layout */}
           <HorizontalBarChart />
         </div>
-        <div style={{ flex: "1 1 300px", backgroundColor: 'white', padding: '10px',
+        <div style={{ flex: "1 1 200px", backgroundColor: 'white', padding: '10px',
           borderRadius: '10px',boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
-         }}>
-          <BarChart />
+         }}> {/* Flex grow, shrink, and basis to control layout */}
+          <BarchartPopulaire />
         </div>
-        <div style={{ flex: "1 1 300px", backgroundColor: 'white', padding: '10px',
+        <div style={{ flex: "1 1 200px", backgroundColor: 'white', padding: '10px',
           borderRadius: '10px',boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
-         }}>
-          <BoxPlot />
+         }}> {/* Flex grow, shrink, and basis to control layout */}
+          <ScatterPlot />
         </div>
+        
+       
       </div>
     </div>
   );
